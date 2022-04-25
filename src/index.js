@@ -4,22 +4,9 @@ import ReactDom from 'react-dom';
 import CounterApp from './CounterApp';
 
 import './index.css';
-    //handleAdd
-    const handleAdd = (e) => {
-        console.log(e);
-    }
 
-    return (
-        <>
-          <h1>CounterApp</h1>
-          <h2> { value } </h2>
 
-          <button onClick =  {handleAdd } >+1</button>
-        </>
-    );
-}
-CounterApp.propTypes = {
-    value: PropTypes.number = {
-    }
-}
-export default CounterApp;
+
+const divRoot = document.querySelector('#app');
+
+ReactDom.render( <CounterApp value = {10}/> , divRoot );
