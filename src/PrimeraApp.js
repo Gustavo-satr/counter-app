@@ -1,11 +1,17 @@
-import React from 'react';
-
-
 
 const PrimeraApp = () => {
 
-    return <h1>Hola Mundo</h1>;
+    const saludo = 'Hola Mundo';
 
+    return (
+        <>
+
+            <h1> {saludo} </h1>
+            {/* JSON.stringify(saludo, null, 3)*/ } 
+            <p>Mi Primera aplicación</p>
+        </>
+    );
+    
+    
 }
-
-export default PrimeraApp; 
+export default PrimeraApp;
